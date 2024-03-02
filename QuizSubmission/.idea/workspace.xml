@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="954bef7b-bc10-4dec-93ed-793a62e17db8" name="Changes" comment="added files">
-      <change beforePath="$PROJECT_DIR$/../AnalyticsService/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AnalyticsService/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AnalyticsService/.idea/vcs.xml" afterDir="false" />
-    </list>
+    <list default="true" id="954bef7b-bc10-4dec-93ed-793a62e17db8" name="Changes" comment="added files" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,7 +86,7 @@
       <updated>1709278525117</updated>
       <workItem from="1709278526196" duration="3099000" />
       <workItem from="1709291077584" duration="4075000" />
-      <workItem from="1709371339757" duration="363000" />
+      <workItem from="1709371339757" duration="765000" />
     </task>
     <task id="LOCAL-00001" summary="implemented features">
       <option name="closed" value="true" />
