@@ -1,0 +1,8 @@
+org\example\quizanalytics\Controllers\AuthenticationController.class
+org\example\quizanalytics\Repository\AnalyticsRepository.class
+org\example\quizanalytics\Service\AuthenticationService.class
+org\example\quizanalytics\Model\Analytics.class
+org\example\quizanalytics\Model\User.class
+org\example\quizanalytics\QuizAnalyticsApplication.class
+org\example\quizanalytics\Controllers\AnalyticsController.class
+org\example\quizanalytics\Service\AnalyticsService.class

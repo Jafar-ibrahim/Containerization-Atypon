@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Quiz</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <style>
+        body {
+            padding: 20px;
+            background: #e0e6f6 linear-gradient(to right, #e0e6f6, #d6e2ef);
+        }
+
+        .quiz-container {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .question-container {
+            margin-bottom: 20px;
+        }
+
+        .choice-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+
+        .success-message {
+            color: #270;
+            background-color: #DFF2BF;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 3px 3px 3px 3px;
+        }
+        .success-message.active {
+            display: block;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="quiz-container">
+    <div th:if="${not #strings.isEmpty(param.success)}" >
+        <span th:text="${param.success}" class="success-message active"></span>
+    </div>
+    <form th:action="@{/quiz/submit}" th:object="${answersSubmission}" method="post">
+        <h1 th:text="${quiz.name}" class="text-center mb-4"></h1>
+
+        <div th:each="question, qIndex : ${quiz.questions}" class="question-container">
+            <p th:text="${question.questionText}"></p>
+
+            <div th:each="choice, cIndex : ${question.choices}" class="choice-container">
+                <div class="custom-control custom-radio">
+                    <input type="hidden"
+                           th:name="|userAnswers[${qIndex.index}].questionId|"
+                           th:value="${question.id}">
+                    <input type="radio"
+                           th:id="${'choice-' + question.id + '-' + choice.id}"
+                           th:name="|userAnswers[${qIndex.index}]|"
+                           class="custom-control-input"
+                           th:value="${choice.id}"
+                           th:field="*{userAnswers[__${qIndex.index}__].selectedChoiceId}"
+                           th:checked="${choice.id == answersSubmission.userAnswers[qIndex.index].selectedChoiceId}">
+                    <label th:for="${'choice-' + question.id + '-' + choice.id}"
+                           th:text="${choice.text}" class="custom-control-label"></label>
+                </div>
+            </div>
+        </div>
+
+        <input type="hidden" th:name="quizId" th:value="${quiz.id}">
+        <input type="hidden" th:value="${answersSubmission}" name="answersSubmission" />
+        <button type="submit" class="btn btn-primary btn-block">Submit</button>
+    </form>
+
+
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

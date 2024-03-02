@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Analytics Report</title>
+     </head>
+<style >
+    *{
+        font-family: sans-serif;
+    }
+    body{
+        background: #e0e6f6 linear-gradient(to right, #e0e6f6, #d6e2ef);
+    }
+    .analytics-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Vertical centering */
+        justify-content: center; /* Horizontal centering */
+        height: 100vh; /* Make the container take full viewport height */
+    }
+
+    .analytics-info {
+        text-align: center; /* Center text within the info section */
+        margin-bottom: 20px;   /* Add space between info and table */
+        display: flex; /* Enable flexbox layout */
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Horizontally center elements within the container */
+    }
+
+
+    .submissions {
+        font-size: 1.5em;  /* Reduce font size */
+    }
+    .analytics-table {
+        border-collapse: collapse;
+        margin: 20px auto;
+        width: 60%; /* Adjust width as desired */
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        border-radius: 5px; /* Slightly rounded corners */
+    }
+
+    .analytics-table th {
+        background-color: #007bff; /* Example header color */
+        color: white;
+        font-weight: bold;
+        text-align: left; /* Align header text */
+    }
+
+    .analytics-table th, .analytics-table td {
+        border: 1px solid #eee;
+        padding: 12px 15px;
+    }
+
+    .analytics-table tbody tr:nth-child(even) {
+        background-color: #f8f9fa; /* Light background for alternating rows */
+    }
+
+    .analytics-table tbody tr:hover {
+        background-color: #e4f0ff; /* Highlight on hover */
+    }
+
+</style>
+<body>
+<div class="analytics-container">
+    <div class="analytics-info">
+        <h1 th:text="'Analytics(Quiz) - ID: ' + ${analytics.id}"></h1>
+        <p class="submissions" th:text="'Number of Submissions: ' + ${analytics.noOfSubmissions}"></p>
+    </div>
+    <table class="analytics-table">
+        <thead>
+        <tr>
+            <th>Metric</th>
+            <th>Value(marks)</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Max</td>
+            <td th:text="${analytics.maxMark}"></td>
+        </tr>
+        <tr>
+            <td>Min</td>
+            <td th:text="${analytics.minMark}"></td>
+        </tr>
+        <tr>
+            <td>Average</td>
+            <td th:text="${analytics.avgMark}"></td>
+        </tr>
+        <tr>
+            <td>Median</td>
+            <td th:text="${analytics.medianMark}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
