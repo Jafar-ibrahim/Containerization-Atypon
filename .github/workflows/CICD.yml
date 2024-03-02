@@ -34,7 +34,7 @@ jobs:
       - name: Build 'authentication-service'
         run: mvn clean install -f authentication-service
 
-  docker_build_and_push:
+  docker_build_and_publish:
     runs-on: ubuntu-latest
     needs: maven_build
     steps:
@@ -51,11 +51,7 @@ jobs:
 
       - name: Push Docker Images
         run: docker-compose -f docker-compose.yml push
-
-  prune_images:
-    runs-on: ubuntu-latest
-    needs: docker_build_and_push
-    steps:
+        
       - name: Prune Docker Images
         if: always()
         run: docker image prune -f
