@@ -18,7 +18,7 @@ public class AnalyticsController {
     private AnalyticsService analyticsService;
 
     @PostMapping("/analyze/{quizId}")
-    public void updateAnalytics(@PathVariable Long quizId){
+    public void analyzeQuizMarks(@PathVariable Long quizId){
         // to override the current quiz analytics
         analyticsRepository.deleteById(quizId);
         Double maxMark = analyticsService.getMaxMark(quizId);
