@@ -32,6 +32,7 @@ services:
     depends_on:
       mysqldb:
         condition: service_healthy
+    image: ${QUIZ_SUBMISSION_APP_IMAGE:-jafarfarwaneh/quiz-submission-app}
 
   authentication-service:
     build: ./authentication-service
@@ -42,6 +43,7 @@ services:
     depends_on:
       mysqldb:
         condition: service_healthy
+    image: ${AUTHENTICATION_SERVICE_IMAGE:-jafarfarwaneh/authentication-service}
 
   analytics-service:
     build: ./AnalyticsService
@@ -52,6 +54,7 @@ services:
     depends_on:
       mysqldb:
         condition: service_healthy
+    image: ${ANALYTICS_SERVICE_IMAGE:-jafarfarwaneh/analytics-service}
 
   quiz-analytics-app:
     build: ./QuizAnalytics
@@ -62,6 +65,8 @@ services:
     depends_on:
       mysqldb:
         condition: service_healthy
+    image: ${QUIZ_ANALYTICS_APP_IMAGE:-jafarfarwaneh/quiz-analytics-app}
+
 volumes:
   mongodb_data:
   mysql_data:
