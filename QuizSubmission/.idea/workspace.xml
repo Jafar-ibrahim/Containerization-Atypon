@@ -5,42 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="954bef7b-bc10-4dec-93ed-793a62e17db8" name="Changes" comment="added files">
-      <change beforePath="$PROJECT_DIR$/../.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AnalyticsService/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AnalyticsService/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AnalyticsService/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AnalyticsService/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AnalyticsService/AnalyticsService/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AnalyticsService/AnalyticsService/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AnalyticsService/AnalyticsService/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AnalyticsService/AnalyticsService/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AnalyticsService/AnalyticsService/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AnalyticsService/AnalyticsService/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AnalyticsService/AnalyticsService/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AnalyticsService/AnalyticsService/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AnalyticsService/AnalyticsService/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AnalyticsService/AnalyticsService/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AnalyticsService/AnalyticsService/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AnalyticsService/AnalyticsService/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AnalyticsService/AnalyticsService/src/main/java/com/example/AnalyticsService/AnalyticsServiceApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AnalyticsService/AnalyticsService/src/main/java/com/example/AnalyticsService/Controllers/AnalyticsController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AnalyticsService/AnalyticsService/src/main/java/com/example/AnalyticsService/Model/Analytics.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AnalyticsService/AnalyticsService/src/main/java/com/example/AnalyticsService/Repository/AnalyticsRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AnalyticsService/AnalyticsService/src/main/java/com/example/AnalyticsService/Service/AnalyticsService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AnalyticsService/AnalyticsService/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AnalyticsService/AnalyticsService/target/AnalyticsService.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AnalyticsService/AnalyticsService/target/AnalyticsService.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AnalyticsService/AnalyticsService/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AnalyticsService/AnalyticsService/target/classes/com/example/AnalyticsService/AnalyticsServiceApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AnalyticsService/AnalyticsService/target/classes/com/example/AnalyticsService/Controllers/AnalyticsController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AnalyticsService/AnalyticsService/target/classes/com/example/AnalyticsService/Model/Analytics.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AnalyticsService/AnalyticsService/target/classes/com/example/AnalyticsService/Repository/AnalyticsRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AnalyticsService/AnalyticsService/target/classes/com/example/AnalyticsService/Service/AnalyticsService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AnalyticsService/AnalyticsService/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AnalyticsService/AnalyticsService/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AnalyticsService/AnalyticsService/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QuizAnalytics/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../QuizAnalytics/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QuizAnalytics/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../QuizAnalytics/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../authentication-service/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../authentication-service/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AnalyticsService/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AnalyticsService/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AnalyticsService/.idea/vcs.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,6 +72,13 @@
       </method>
     </configuration>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.1-openjdk-21.0.1-f644763e9732-f98dd351" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -116,6 +89,7 @@
       <updated>1709278525117</updated>
       <workItem from="1709278526196" duration="3099000" />
       <workItem from="1709291077584" duration="4075000" />
+      <workItem from="1709371339757" duration="363000" />
     </task>
     <task id="LOCAL-00001" summary="implemented features">
       <option name="closed" value="true" />
